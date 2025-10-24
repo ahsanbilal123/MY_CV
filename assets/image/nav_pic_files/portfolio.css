@@ -1,0 +1,377 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f8f8;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header {
+  background-image: url("https://t4.ftcdn.net/jpg/08/29/92/35/240_F_829923583_Q9qvQUSqXo0URtHNzwwFqU0H0ByKXz1Y.jpg");
+  background-size: cover;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+header #profile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: white;
+}
+header #profile img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+header nav {
+  display: flex;
+  gap: 20px;
+}
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+header nav a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-image: url("https://t4.ftcdn.net/jpg/08/29/92/35/240_F_829923583_Q9qvQUSqXo0URtHNzwwFqU0H0ByKXz1Y.jpg");
+  background-size: cover;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+footer a {
+  color: lightblue;
+}
+
+.tool {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.tool img {
+  width: 100px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+.tool img:hover {
+  transform: scale(1.4);
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
+}
+
+.dark {
+  background-color: #0d1117;
+  color: white;
+}
+.dark .card {
+  background: #1f2937;
+}
+.dark section h2 {
+  color: white;
+}
+.dark #exp {
+  border-left: 3px solid #fff;
+}
+.dark #exp .experience-item::before {
+  background: #fff;
+  border-color: #1f2937;
+}
+.dark #exp h3, .dark #exp p {
+  color: white;
+}
+
+section {
+  padding: 30px;
+}
+section h2 {
+  color: #110701;
+  margin-bottom: 15px;
+}
+section .card {
+  background-color: rgb(18, 77, 114);
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+section .card h3 {
+  color: rgb(255, 255, 255);
+  margin-bottom: 8px;
+}
+section .card p {
+  color: white;
+  font-size: 0.9rem;
+}
+section form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 350px;
+  margin: 0 auto;
+}
+section form input,
+section form textarea {
+  padding: 8px;
+  border: 3px solid #cdc9c9;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+section form button {
+  padding: 8px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 4px;
+  background: #333;
+  color: white;
+  cursor: pointer;
+}
+
+#pro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.project-card {
+  background: rgb(18, 77, 114);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 30%;
+}
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.project-card .project-info {
+  padding: 15px;
+}
+.project-card .project-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: rgb(255, 255, 255);
+}
+.project-card .project-info p {
+  font-size: 0.9rem;
+  color: rgb(255, 255, 255);
+  line-height: 1.4;
+}
+
+#img {
+  border-radius: 20%;
+  height: 330px;
+  width: 280px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#img:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+#abt {
+  display: flex;
+}
+#abt h3 {
+  padding: 30px 0px 30px 30px;
+}
+#abt p {
+  padding-left: 30px;
+  padding-top: 5px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#exp {
+  position: relative;
+  margin: 20px auto;
+  padding-left: 30px;
+  border-left: 3px solid rgb(18, 77, 114);
+}
+#exp .experience-item {
+  position: relative;
+  margin-bottom: 25px;
+}
+#exp .experience-item h3 {
+  color: #110701;
+  font-size: 1.1rem;
+}
+#exp .experience-item p {
+  color: #444;
+  font-size: 0.9rem;
+}
+
+#exp-gif {
+  width: 35%;
+  height: 400px;
+}
+
+#exp-content {
+  display: flex;
+}
+
+#change {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: xx-large;
+  cursor: pointer;
+  z-index: 1000;
+}
+#change:hover {
+  opacity: 0.7;
+}
+
+#mob-img {
+  display: none;
+}
+
+#contact {
+  padding: 20px;
+  text-align: center;
+}
+
+.menu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1001;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.95);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.menu .menu-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+}
+.menu .menu-content a {
+  padding: 12px;
+  text-decoration: none;
+  font-size: 30px;
+  color: #ccc;
+  display: block;
+  transition: 0.3s;
+}
+.menu .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 50px;
+  color: white;
+  cursor: pointer;
+}
+
+.hamburger {
+  display: none;
+  font-size: 32px;
+  cursor: pointer;
+  color: white;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  nav {
+    align-self: flex-end;
+    margin-left: 170px;
+  }
+  #img {
+    display: none;
+  }
+  #mob-img {
+    display: block;
+  }
+}
+@media (max-width: 767px) {
+  nav.desktop-nav {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  header #profile {
+    flex-direction: column;
+    align-items: center;
+  }
+  header nav {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  header nav a {
+    font-size: 0.9rem;
+  }
+  .tool {
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+  }
+  .tool img {
+    width: 60px;
+  }
+  #pro {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .project-card {
+    width: 90%;
+  }
+  .project-card img {
+    height: 140px;
+  }
+  #img {
+    display: none;
+  }
+  #mob-img {
+    display: block;
+  }
+  #abt {
+    display: flex;
+    padding-left: 0%;
+  }
+  #abt h3 {
+    padding-left: 10px;
+    padding-top: 20px;
+  }
+  #abt p {
+    padding: 10px;
+  }
+  #exp-gif {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=portfolio.css.map */
